@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Carmenfy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ascoltati">I più ascoltati</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ascolta
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#tendenze">Ambience</a></li>
+                            <li><a class="dropdown-item" href="#videogames">Videogames OST</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Altri generi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"></a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca la tua musica"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--CARD-->
+    <div class="container">
+        <div class="row">
+            <!--PRIMA ROW-->
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="CARL B.jpg" class="card-img-top" alt="Artist1">
+                    <div class="card-body">
+                        <h5 class="card-title">CARL BRAVE - Notti Brave</h5>
+                        <p class="card-text">Notti brave è il primo album in studio del rapper italiano Carl Brave,
+                            pubblicato l'11 maggio 2018 dalla Universal.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=K-xxvcvBL3s&list=PLsqby1DLV4rDWimbwUlRafmXbOkjonp9K"
+                            class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="PANTERA.jpg" class="card-img-top" alt="Artist2">
+                    <div class="card-body">
+                        <h5 class="card-title">PANTERA - Vulgar Display Of Power</h5>
+                        <p class="card-text">Vulgar Display of Power is the sixth studio album by American heavy metal
+                            band
+                            Pantera. Released on February 25, 1992, through Atco Records.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=8hu6xDPcNlE" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="IN FLAMES.jpeg" class="card-img-top" alt="Artist2">
+                    <div class="card-body">
+                        <h5 class="card-title">IN FLAMES - Sounds of a Playground Fading</h5>
+                        <p class="card-text">Sounds of a Playground Fading is the tenth studio album by Swedish heavy
+                            metal
+                            band In Flames, released on 15 June 2011.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=9Ls3djzMUi4" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="POST M.webp" class="card-img-top" alt="Artist4">
+                    <div class="card-body">
+                        <h5 class="card-title">POST MALONE - Austin</h5>
+                        <p class="card-text">Austin is the fifth studio album by American musician Post Malone. It was
+                            released through Republic and Mercury Records on July 28, 2023.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=VzEqqSUWNjw" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--I più ascoltati-->
+            <div id="ascoltati">I più ascoltati</div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="BWU.jpg" class="card-img-top" alt="Artist5">
+                    <div class="card-body">
+                        <h5 class="card-title">BOYWITHUKE - Toxic</h5>
+                        <p class="card-text">Toxic" is a song by Korean-American singer BoyWithUke, originally
+                            self-released
+                            as a single on October 29, 2021.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=Mvaosumc4hU" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="BE.png" class="card-img-top" alt="Artist6">
+                    <div class="card-body">
+                        <h5 class="card-title">BILLIE EILISH - When We All Fall Asleep, Where Do We Go</h5>
+                        <p class="card-text">When We All Fall Asleep, Where Do We Go? (stylized in all caps) is the
+                            debut
+                            studio album by American singer and songwriter Billie Eilish.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=mMX2ohnUgGg" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="CREMO.jpeg" class="card-img-top" alt="Artist7">
+                    <div class="card-body">
+                        <h5 class="card-title">CESARE CREMONINI - Poetica</h5>
+                        <p class="card-text">Poetica is a single by Italian singer-songwriter Cesare Cremonini, released
+                            on
+                            3 November 2017 as the first extract from his sixth studio album Possibili Scenario.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=e3tqZtXsQH4" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="THOSE EYES.jpeg" class="card-img-top" alt="Artist8">
+                    <div class="card-body">
+                        <h5 class="card-title">NEW WEST - Those Eyes</h5>
+                        <p class="card-text">Their music blends rhythm and blues and indie rock influences. They
+                            released a
+                            number of singles, including "Cold Tea" and "Those Eyes".</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=t1dvrcqlQgI" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--Tendenze-->
+            <div id="tendenze">Ambience</div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="SWEET.jpeg" class="card-img-top" alt="Artist9">
+                    <div class="card-body">
+                        <h5 class="card-title">SWEET MORNING - Ambience Music</h5>
+                        <p class="card-text">Sweet Morning Coffee Porch Ambience with Gentle Falling Snow.
+                            Wishing you a day filled with the cool vibes and intricate rhythms of jazz. Let the music
+                            transport you.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=92fHTziRVII&t=18188s" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="DA.webp" class="card-img-top" alt="Artist10">
+                    <div class="card-body">
+                        <h5 class="card-title">DARK ACADEMIA - Cozy Library Ambience With Relaxing Piano Music</h5>
+                        <p class="card-text">Whether you're studying, reading, or simply seeking solace in the embrace
+                            of
+                            academia, this video promises to transport you to a realm of comfort and inspiration.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=ZjMl5jkRpCc" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="AUTUMN.jpeg" class="card-img-top" alt="Artist11">
+                    <div class="card-body">
+                        <h5 class="card-title">AUTUMN - Rainy Autumnal Day in a Conservatory Ambience and Music</h5>
+                        <p class="card-text">If I had an unlimited budget, my house would probably be built in Art
+                            Nouveau
+                            style. And there would definitely be a conservatory just like this one. And probably a
+                            greenhouse just as gorgeous.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=W4BqvpsyC3Y" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="TAVERN.jpg" class="card-img-top" alt="Artist12">
+                    <div class="card-body">
+                        <h5 class="card-title">TAVERN - RELAXED AND COZY FANTASY TAVERN AMBIENCE</h5>
+                        <p class="card-text">a hot, filling meal, a cold drink or four, a quiet, peaceful setting and
+                            relaxing music that soothes the nerves after a busy day dealing with bankers and people who
+                            owe
+                            money. A good day’s work done and the evening is now mine.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=bXT96SVp0jg" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--Videogames-->
+            <div id="videogames">Videogames OST</div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="HOGWARTS.jpg" class="card-img-top" alt="Artist13">
+                    <div class="card-body">
+                        <h5 class="card-title">HOGWARTS LEGACY - Ambience Music</h5>
+                        <p class="card-text">Hogwarts Legacy - Study Themes from the Official Soundtrack
+                            by chuck e. myers “sea”, J Scott Rakozy & Peter Murray.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=Ea57QWSeZqc" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="VILLAGE.jpeg" class="card-img-top" alt="Artist13">
+                    <div class="card-body">
+                        <h5 class="card-title">RESIDENT EVIL VILLAGE - Soundtrack</h5>
+                        <p class="card-text">Music from Resident Evil Village (2021) published by Capcom. Biohazard
+                            Village
+                            by Various Artists.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=cz6o5NoFysM" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="TLOU.png" class="card-img-top" alt="Artist11">
+                    <div class="card-body">
+                        <h5 class="card-title">TLOU - (Original Soundtrack) | Full Album</h5>
+                        <p class="card-text">Music from The Last of Us 2 (2020) developed by Naughty Dog. The Last of Us
+                            Part 2 (Original Soundtrack) by Gustavo Santaolalla & Mac Quayle.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=X-swJqjzjCI&t=3594s" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 col-xl-3">
+                <div class="card card-container">
+                    <img src="ER.jpg" class="card-img-top" alt="Artist16">
+
+                    <div class="card-body">
+                        <h5 class="card-title">ELDEN RING - (Digital Soundtrack) | Full Album</h5>
+                        <p class="card-text">Music from Elden Ring (2022) developed by FromSoftware. Elden Ring (Digital
+                            Soundtrack) by Various Artists.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=8k0QPEQxr24" class="card-link">Album</a>
+                        <button id="play"><i class="fa-regular fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5581abaa8c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

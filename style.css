@@ -1,0 +1,81 @@
+body {
+    background-image: radial-gradient(circle,  #d24bff, #414040);
+}
+
+.navbar {
+    background-color: rgb(32, 32, 32);
+}
+
+.form-control.me-2 {
+    background-color: #d24bff;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn.btn-outline-success {
+    border: 2px solid rgb(32, 32, 32);
+}
+
+.btn-outline-success {
+    color: #d24bff;
+}
+
+.nav-link {
+    color: #d24bff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #d24bff;
+}
+
+.row {
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    margin-top: 50px;
+    background-color: rgb(32, 32, 32);
+    color: rgb(185, 185, 185);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img,
+.card-img-top {
+    margin-top: 5px;
+}
+
+.card-link {
+    color: #d24bff;
+    text-decoration: none;
+}
+
+.card-body button {
+    margin-left: 100px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 50%;
+}
+
+#play {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#ascoltati, #tendenze, #videogames {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 30px;
+}
